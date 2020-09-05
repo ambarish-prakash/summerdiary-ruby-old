@@ -1,0 +1,17 @@
+
+<h1>Summer Diary!</h1>
+
+
+<h2> Login </h2>
+
+
+<%= form_with scope: :user, url: user_index_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
